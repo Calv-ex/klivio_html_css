@@ -4,76 +4,384 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Klivio</title>
-  <link rel="stylesheet" href="/css/resets.css">
-  <link rel="stylesheet" href="/css/generals.css">
-  <link rel="stylesheet" href="/css/index.css">
-  <link rel="stylesheet" href="/css/header.css">
-  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
+
 <body>
+
   <header class="header">
 
-    <div class="header__logoContainer">
-      <img src="/assets/imgs/" alt="Logo Klivio" class="header__logoContainer__logo">
-    </div>
+    <img src="/assets/imgs/logo.png" alt="Logo Klivio" class="header__logo">
 
-    <nav class="header__nav">
+    <nav class="header__nav" aria-label="Navigation principale">
 
-        <a href="" class="header__nav__links header__nav__links__formationLink">Les formations</a>
-        <input type="search" class="" placeholder="Rechercher">
-        <a href="#" class="header__nav__links header__nav__links__signInLink">Connexion</a>
-        <a href="#" class="header__nav__links header__nav__links__signUpLink">Inscription</a>
+      <button class="header__nav__bm" aria-label="Menu">
+        <img src="/assets/imgs/icon.svg" alt="">
+      </button>
 
-        <div class="header__nav__bm">
-          <span class="header__nav__bm__line header__nav__bm__line__1"></span>
-          <span class="header__nav__bm__line header__nav__bm__line__2"></span>
-          <span class="header__nav__bm__line header__nav__bm__line__3"></span>
+      <div class="nav__bm__menu">
+        <a href="#" class="nav__link">Les formations</a>
+
+        <input type="search" placeholder="Rechercher" class="nav__search">
+
+        <div class="nav__auth">
+          <a href="#" class="nav__link">Connexion</a>
+          <a href="#" class="nav__link">Inscription</a>
         </div>
+      </div>
 
     </nav>
-
   </header>
 
-  <main class="main">
-    <section class="main__heroSection">
-      <hgroup class="main__heroSection__titles">
-          <h1 class="main__heroSection__titles__h1">Klivio, l'allié de votre progression</h1>
-          <p class="main__heroSection__titles__subtitle">Les meilleures formations sur le développement personnel</p>
-      </hgroup>
-      <a href="#">En savoir plus</a>
+  <main>
+    <section class="hero">
+      <img src="/assets/imgs/pexels-polina-zimmerman-3747457 2 1.png" alt="" class="hero__banner">
+        <h1 class="hero__h1">Klivio, l'allié de votre progression</h1>
+        <p class="hero__slogan">Les meilleures formations sur le développement personnel</p>
+        <a href="#" class="hero__cta">En savoir plus</a>
     </section>
 
-    <section class="main__popularFormationSection">
+    <section class="formations formations__popular">
       <h2>Les formations populaires</h2>
+
+      <div class="formations__gallery">
+
+        <article class="card">
+          <figure>
+            <img src="/assets/imgs/img-course.png" alt="">
+          </figure>
+
+          <div class="card__price">
+            <p class="card__price__current">15,99 €</p>
+            <s class="card__price__old">60 €</s>
+          </div>
+          
+          <div class="card__details">
+            <h3>Parler en public</h3>
+            <p class="card__author">Sonia Lefèvre | Coach prise de parole</p>
+            <div class="card__stars">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+            </div>
+            <p class="card__description">Gagnez en aisance et captez votre auditoire</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="/assets/imgs/img-course.png" alt="">
+          </figure>
+
+          <div class="card__price">
+            <p class="card__price__current">15,99 €</p>
+            <s class="card__price__old">60 €</s>
+          </div>
+          
+          <div class="card__details">
+            <h3>Parler en public</h3>
+            <p class="card__author">Sonia Lefèvre | Coach prise de parole</p>
+            <div class="card__stars">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+            </div>
+            <p class="card__description">Gagnez en aisance et captez votre auditoire</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="/assets/imgs/img-course.png" alt="">
+          </figure>
+
+          <div class="card__price">
+            <p class="card__price__current">15,99 €</p>
+            <s class="card__price__old">60 €</s>
+          </div>
+          
+          <div class="card__details">
+            <h3>Parler en public</h3>
+            <p class="card__author">Sonia Lefèvre | Coach prise de parole</p>
+            <div class="card__stars">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+            </div>
+            <p class="card__description">Gagnez en aisance et captez votre auditoire</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="/assets/imgs/img-course.png" alt="">
+          </figure>
+
+          <div class="card__price">
+            <p class="card__price__current">15,99 €</p>
+            <s class="card__price__old">60 €</s>
+          </div>
+          
+          <div class="card__details">
+            <h3>Parler en public</h3>
+            <p class="card__author">Sonia Lefèvre | Coach prise de parole</p>
+            <div class="card__stars">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+            </div>
+            <p class="card__description">Gagnez en aisance et captez votre auditoire</p>
+          </div>
+        </article>
+
+      </div>
+
+      <button class="formations__more">Voir plus de formations</button>
     </section>
 
-    <section>
+    <section class="formations formations__recent">
+      <h2>Les formations récentes</h2>
 
+      <div class="formations__gallery">
+
+        <article class="card">
+          <figure>
+            <img src="/assets/imgs/img-course.png" alt="">
+          </figure>
+
+          <div class="card__price">
+            <p class="card__price__current">15,99 €</p>
+            <s class="card__price__old">60 €</s>
+          </div>
+          
+          <div class="card__details">
+            <h3>Parler en public</h3>
+            <p class="card__author">Sonia Lefèvre | Coach prise de parole</p>
+            <div class="card__stars">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+            </div>
+            <p class="card__description">Gagnez en aisance et captez votre auditoire</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="/assets/imgs/img-course.png" alt="">
+          </figure>
+
+          <div class="card__price">
+            <p class="card__price__current">15,99 €</p>
+            <s class="card__price__old">60 €</s>
+          </div>
+          
+          <div class="card__details">
+            <h3>Parler en public</h3>
+            <p class="card__author">Sonia Lefèvre | Coach prise de parole</p>
+            <div class="card__stars">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+            </div>
+            <p class="card__description">Gagnez en aisance et captez votre auditoire</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="/assets/imgs/img-course.png" alt="">
+          </figure>
+
+          <div class="card__price">
+            <p class="card__price__current">15,99 €</p>
+            <s class="card__price__old">60 €</s>
+          </div>
+          
+          <div class="card__details">
+            <h3>Parler en public</h3>
+            <p class="card__author">Sonia Lefèvre | Coach prise de parole</p>
+            <div class="card__stars stars">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+            </div>
+            <p class="card__description">Gagnez en aisance et captez votre auditoire</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="/assets/imgs/img-course.png" alt="">
+          </figure>
+
+          <div class="card__price">
+            <p class="card__price__current">15,99 €</p>
+            <s class="card__price__old">60 €</s>
+          </div>
+          
+          <div class="card__details">
+            <h3>Parler en public</h3>
+            <p class="card__author">Sonia Lefèvre | Coach prise de parole</p>
+            <div class="card__stars stars">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+              <img src="/assets/imgs/stars.svg" alt="" class="star">
+            </div>
+            <p class="card__description">Gagnez en aisance et captez votre auditoire</p>
+          </div>
+        </article>
+      </div>
+
+      <button class="formations__more">Voir plus de formations</button>
     </section>
 
-    <section>
+    <section class="advice">
+      <h2>Avis clients</h2>
 
+      <article class="advice__item">
+        <img src="/assets/imgs/juliette.png" alt="" class="advice__pp">
+        <p class="advice__name">Juliette</p>
+        <div class="advice__stars stars">
+          <img src="/assets/imgs/stars.svg" alt="" class="star">
+          <img src="/assets/imgs/stars.svg" alt="" class="star">
+          <img src="/assets/imgs/stars.svg" alt="" class="star">
+          <img src="/assets/imgs/stars.svg" alt="" class="star">
+          <img src="/assets/imgs/stars.svg" alt="" class="star">
+        </div>
+        <p class="advice__text">
+          J’ai trouvé le parcours très bien structuré : vidéos courtes, quizzes pertinents et projets pratiques qui m’ont permis d’appliquer immédiatement les notions. L’interface est claire et la progression est motivante — parfait pour se former en autonomie.
+        </p>
+      </article>
+
+      <article class="advice__item">
+        <img src="/assets/imgs/camille.png" alt="" class="advice__pp">
+        <p class="advice__name">Camille</p>
+        <div class="advice__stars stars">
+          <img src="/assets/imgs/stars.svg" alt="" class="star">
+          <img src="/assets/imgs/stars.svg" alt="" class="star">
+          <img src="/assets/imgs/stars.svg" alt="" class="star">
+          <img src="/assets/imgs/stars.svg" alt="" class="star">
+          <img src="/assets/imgs/stars.svg" alt="" class="star">
+        </div>
+        <p class="advice__text">
+          Bon équilibre entre théorie et pratique. Les chapitres sont détaillés, et le support et les corrections automatiques ont vraiment aidé. Idéal pour démarrer et progresser rapidement.
+        </p>
+      </article>
     </section>
 
-    <section>
+    <section class="advantages">
+      <h2>Les avantages Klivio</h2>
+      <div class="advantages__content">
+        <ul class="advantages__list">
+          <li><img src="/assets/imgs/arrow-up-right.svg" alt="">Suivi de sa progression</li>
+          <li><img src="/assets/imgs/edit-01.svg" alt="">Exercices et QCM pour la mise en pratique</li>
+          <li><img src="/assets/imgs/download-02.svg" alt="">Possibilité de télécharger/imprimer les formations</li>
+          <li><img src="/assets/imgs/star-02.svg" alt="">Contenu qualificatif et vérifié</li>
+          <li><img src="/assets/imgs/clock-backward.svg" alt="">Accès 24h/24, 7j/7</li>
+          <li><img src="/assets/imgs/annotation-typing.svg" alt="">Espaces d'échanges pour poser ses questions</li>
+        </ul>
 
+        <img src="/assets/imgs/avantages.png" alt="">
+      </div>
     </section>
 
-    <section>
-
+    <section class="create">
+      <h2>Créez vos formations</h2>
+      <div class="create__content">
+        <img src="/assets/imgs/become-author.png" alt="">
+        <ul class="create__list">
+          <li><img src="/assets/imgs/coin-hand.svg" alt="">Commission unique au pourcentage</li>
+          <li><img src="/assets/imgs/heart.svg" alt="">Mise en avant sur la plateforme</li>
+          <li><img src="/assets/imgs/pencil-01.svg" alt="">Contrôle total sur contenu et prix</li>
+          <li><img src="/assets/imgs/settings.svg" alt="">Fonctionnalités avancées : espace commentaires, possibilité de créer des QCM, exercices, vidéos, téléchargement en PDF, suivi des statistiques des ventes, gestion de codes promos, gestion de la facturation, etc</li>
+          <li><img src="/assets/imgs/user-profile-square.svg" alt="">Le professeur conserve 100% de ses droits d'auteur</li>
+        </ul>
+      </div>
     </section>
 
-    <section>
+    <section class="about">
+      <h2>À propos de Klivio</h2>
+      <div class="about__content">
+        <p>Chez Klivio, nous défendons des valeurs fondamentales qui définissent notre approche éducative. Nous nous engageons à assurer une rémunération équitable pour les créateurs de contenu, reconnaissant la qualité de leur travail. <br><br>
+          Favorisant l'autonomie d'apprentissage, notre plateforme offre la flexibilité  écessaire pour explorer divers sujets. La transparence est au cœur de notre démarche, garantissant une clarté totale sur les formations que les instructeurs proposent. Ensemble, ces valeurs forment le socle d'une  ducation enrichissante et équitable, guidant notre mission d'offrir des pportunités d'apprentissage de qualité</p>
+      </div>
 
+      <div class="about__logoContainer">
+          <img class="about__logo" src="/assets/imgs/logo.png" alt="">
+      </div>
     </section>
 
-    <section>
+    <section class="contact">
+      <h2>Nous contacter</h2>
+      <hr>
 
+      <form>
+        <input type="text" placeholder="Nom" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
     </section>
+
   </main>
 
-  <footer>
+  <footer class="footer">
+
+    <div class="footer__separatorGradient">
+
+    </div>
+
+    <div class="footer__upper">
+      <img src="/assets/imgs/logo.png" alt="Logo Klivio">
+
+      <div class="footer__upper__legal">
+
+      </div>
+
+      <div class="footer__upper__contact">
+
+      </div>
+
+      <div class="footer__upper__auth">
+        <a href="#">Connexion</a>
+        <a href="#">Inscription</a>
+      </div>
+    </div>
+
+    <hr class="footer__separator">
+
+    <div class="footer__lower">
+      <p>&copy; Klivio - 2025</p>
+      <div class="footer__socials">
+        <p>Suivez - nous</p>
+        <a href="#"><img src="" alt=""></a>
+        <a href="#"><img src="" alt=""></a>
+        <a href="#"><img src="" alt=""></a>
+        <a href="#"><img src="" alt=""></a>
+      </div>
+    </div>
 
   </footer>
+
 </body>
 </html>

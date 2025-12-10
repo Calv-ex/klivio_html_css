@@ -1,0 +1,27 @@
+@font-face
+{
+  font-family: 'Montserrat';
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+}
+
+:root
+{
+  --primaryColor: #152237;
+  --secondaryColor: #44DD8A;
+  --whiteColor: #FEF7FF;
+  --mobileFs__h1: 32px;
+  --mobileFs__h2: 30px;
+  --mobileFs__h3: 28px;
+  --mobileFs__li: 20px;
+  --Fs__crossPrice: 10px;
+  --mobileFsLittleText: 1rem;
+  --Fs__a: 15px;
+  --negativeLS: -1.5%;
+}
+
+* 
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+

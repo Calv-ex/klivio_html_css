@@ -1,0 +1,369 @@
+.hero
+{
+  width: 100%;
+  height: clamp(364px, 100vw, 451px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: linear-gradient(120deg, rgba(68, 221, 138, 0.8), rgba(21, 183, 226, 0.8));
+  gap: 30px;
+  position: relative;
+  padding-inline: 5%;
+}
+
+.hero__banner
+{
+  width: 100%;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  object-fit:cover;
+  object-position: 0% 100%;
+}
+
+.hero__h1
+{
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--primaryColor);
+  letter-spacing: var(--negativeLS);
+}
+
+.hero__slogan
+{
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: var(--negativeLS);
+}
+
+.hero__cta
+{
+  color: var(--primaryColor);
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  padding:  12px 18px;
+  font-size: var(--Fs__a);
+  letter-spacing: var(--negativeLS);
+}
+
+.formations
+{
+  padding: 5% 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formations h2
+{
+  font-size: var(--mobileFs__h2);
+  font-weight: 800;
+  text-align: center;
+}
+
+.formations h3
+{
+  font-size: var(--mobileFs__h3);
+}
+
+.formations .card__price
+{
+  width: fit-content;
+  height: 31.58px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 93px;
+  font-weight: bold;
+  right: 3%;
+  top: 62%;
+}
+
+.formations__more
+{
+  border-radius: 6px;
+  padding:  12px 24px;
+  font-size: var(--Fs__a);
+  letter-spacing: var(--negativeLS);
+  margin: 2.5rem 0;
+}
+
+.card
+{
+  padding-top: 47px;
+  position: relative;
+}
+
+.card__stars
+{
+  display: flex;
+  margin-bottom: 6px;
+}
+
+.star
+{
+  width: 1.34rem;
+  aspect-ratio: 1/1;
+}
+
+.card__author
+{
+  margin: 8px 0;
+}
+
+.formations__popular
+{
+  background-color: #FFFFFF;
+}
+
+.formations__popular h2
+{
+  color: var(--primaryColor);
+}
+
+.formations__popular .card__price
+{
+  background-color: var(--primaryColor);
+  color: #FFFFFF;
+}
+
+.card__price__current
+{
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.card__price__old
+{
+  text-decoration:line-through;
+  font-size: var(--Fs__crossPrice);
+  font-weight: 400;
+  line-height: 7px;
+}
+
+.card__details
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 14px;
+}
+
+.formations__popular .card h3
+{
+  color: var(--primaryColor);
+}
+
+.formations__popular .formations__more
+{
+  background-color: var(--primaryColor);
+  color: #FFFFFF;
+}
+
+.formations__recent
+{
+  background-color: var(--primaryColor);
+  color: #FFFFFF;
+}
+
+.formations__recent .card__price
+{
+  background-color: #FFFFFF;
+  color: var(--primaryColor);
+}
+
+.advice
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 5%;
+}
+
+.advice h2, .advantages h2, .create h2, .about h2, .contact h2
+{
+  text-transform: uppercase;
+  font-size: var(--mobileFs__h2);
+  color: var(--primaryColor);
+  font-weight: 800;
+  letter-spacing: var(--negativeLS);
+}
+
+.advice__item
+{
+  padding-top: 20px;
+}
+
+.advice__pp
+{
+  width: 30%;
+  border-radius: 50%;
+}
+
+.advice__name
+{
+  font-size: large;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.advice__text
+{
+  text-align: start;
+  line-height: 30px;
+  font-size: var(--mobileFsLittleText);
+  margin-inline: 5%;
+}
+
+.advantages
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5%;
+  background-color: #F5F5F5;
+}
+
+.advantages__list
+{
+  padding: 20px 0;
+}
+
+.advantages__list li
+{
+  display: flex;
+  flex-direction: row;
+  text-align: start;
+  padding: 8px 0;
+  gap: 16px;
+  font-size: var(--mobileFs__li);
+}
+
+.advantages__list img
+{
+  width: fit-content;
+}
+
+.create
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5%;
+  background-color: var(--secondaryColor);
+}
+
+.create__content
+{
+  padding: 20px 0;
+}
+
+.create__list
+{
+  text-align: start;
+}
+
+.create__list li
+{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  padding: 8px 0;
+  gap: 2rem;
+  font-size: var(--mobileFs__li);
+}
+
+.create__list li img
+{
+  width: fit-content;
+}
+
+.about
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F5F5F5;
+  padding-top: 5%;
+}
+
+.about h2
+{
+  width: 75%;
+  text-align: center;
+}
+
+.about__content
+{
+  padding: 5%;
+}
+
+.about p
+{
+  text-align: start;
+  line-height: 28px;
+  letter-spacing: var(--negativeLS);
+  color: var(--primaryColor);
+  font-size: 18px;
+}
+
+.about__logoContainer
+{
+  width: 100%;
+  background: var(--primaryColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+}
+
+.about__logo
+{
+  width: clamp(214px, 50vw ,430px);
+  aspect-ratio: 2.78/1;
+}
+
+.contact
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact hr
+{
+  display: none;
+}
+
+.contact form
+{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+}
+
+.contact form input, .contact form textarea
+{
+  border: none;
+  background-color: var(--primaryColor);
+  font-size: var(--Fs__a);
+  padding: 15px;
+  color: #FFFFFF;
+}
+
+.contact form input::placeholder, .contact form textarea::placeholder
+{
+  color: #FFFFFF;
+}
