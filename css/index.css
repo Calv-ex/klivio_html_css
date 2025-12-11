@@ -395,18 +395,18 @@
   padding: 10px 0;
 }
 
-@media (max-width: 1250px)
+@media (min-width: 1250px)
 {
   .formations__gallery
   {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (min-width: 900px) {
   .formations__gallery
   {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .hero__bannerMobile
