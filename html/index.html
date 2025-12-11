@@ -23,13 +23,15 @@
       </button>
 
       <div class="nav__bm__menu">
-        <a href="#" class="nav__link">Les formations</a>
+        <a href="#" class="nav__link formations__link">Les formations</a>
 
-        <input type="search" placeholder="Rechercher" class="nav__search">
+        <div class="nav__searchContainer">
+            <input type="search" placeholder="Rechercher" class="nav__search">
+        </div>
 
         <div class="nav__auth">
-          <a href="#" class="nav__link">Connexion</a>
-          <a href="#" class="nav__link">Inscription</a>
+          <a href="#" class="nav__link login__link">Connexion</a>
+          <a href="#" class="nav__link signup__link">Inscription</a>
         </div>
       </div>
 
@@ -38,7 +40,8 @@
 
   <main>
     <section class="hero">
-      <img src="/assets/imgs/pexels-polina-zimmerman-3747457 2 1.png" alt="" class="hero__banner">
+      <img src="/assets/imgs/pexels-polina-zimmerman-3747457 2 1.png" alt="" class="hero__bannerMobile">
+      <img src="/assets/imgs/bg-header.png" alt="" class="hero__bannerDesktop">
         <h1 class="hero__h1">Klivio, l'allié de votre progression</h1>
         <p class="hero__slogan">Les meilleures formations sur le développement personnel</p>
         <a href="#" class="hero__cta">En savoir plus</a>
@@ -352,14 +355,25 @@
     </div>
 
     <div class="footer__upper">
-      <img src="/assets/imgs/logo.png" alt="Logo Klivio">
+      <img src="/assets/imgs/logo.png" alt="Logo Klivio" class="footer__logo">
 
       <div class="footer__upper__legal">
-
+        <h4>Mentions légales</h4>
+        <div class="upper__legal__links">
+          <a href="">CGU</a>
+        <a href="">CGV</a>
+        <a href="">FAQ</a>
+        <a href="">Contact</a>
+        </div>
       </div>
 
       <div class="footer__upper__contact">
-
+        <h4>Coordonnées</h4>
+        <div class="upper__contact__links">
+          <a href=""><img src="/assets/imgs/marker-02.svg" alt=""> 1 place république,<br>75003 Paris</a>
+          <a href=""><img src="/assets/imgs/phone.svg" alt="">01.02.03.04.05</a>
+          <a href=""><img src="/assets/imgs/mail-01.svg" alt="">contact@klivio.fr</a>
+        </div>
       </div>
 
       <div class="footer__upper__auth">

@@ -6,21 +6,5 @@
   text-decoration: none;
   border-collapse: collapse;
   box-sizing: border-box;
-}
-
-body
-{
-  width: 100%;
-}
-
-a, button
-{
-  cursor: pointer;
-  outline: none;
-  border: none;
-}
-
-img
-{
-  width: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
