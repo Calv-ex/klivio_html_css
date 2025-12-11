@@ -395,9 +395,35 @@
   padding: 10px 0;
 }
 
+@media (max-width: 1250px)
+{
+  .formations__gallery
+  {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (min-width: 900px) {
   .formations__gallery
   {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .hero__bannerMobile
+  {
+    display: none;
+  }
+
+  .hero__bannerDesktop
+  {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2/1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  object-fit:cover;
   }
 }

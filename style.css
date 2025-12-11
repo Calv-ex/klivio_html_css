@@ -1,0 +1,10 @@
+@import url(css/resets.css);
+@import url(css/generals.css);
+@import url(css/index.css);
+@import url(css/header.css);
+@import url(css/footer.css);
+
+*
+{
+  border: 1px solid red;
+}
