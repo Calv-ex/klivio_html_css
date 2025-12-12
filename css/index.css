@@ -1,7 +1,7 @@
 .hero
 {
   width: 100%;
-  height: clamp(364px, 100vw, 451px);
+  height: clamp(364px, 100vw, 450px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,7 +59,7 @@
 
 .formations
 {
-  padding: 20px 0;
+  padding: 5% 5dvw;
 }
 
 .formations__gallery
@@ -68,6 +68,7 @@
   display: grid;
   grid-template-columns: 100%;
   place-items: center;
+  align-items: start;
 }
 
 .formations h2
@@ -75,6 +76,7 @@
   font-size: var(--mobileFs__h2);
   font-weight: 800;
   text-align: center;
+  padding-top: 20px;
 }
 
 .formations h3
@@ -85,8 +87,12 @@
 .card
 {
   padding-top: 47px;
-  position: relative;
   width: 305px;
+}
+
+.card__figure
+{
+  position: relative;
 }
 
 .formations .card__price
@@ -101,17 +107,18 @@
   padding: 3px 10px;
   border-radius: 93px;
   font-weight: bold;
-  right: 3%;
-  top: 58%;
+  top: 90%;
+  right: 5%;
 }
 
 .formations__more
 {
+  display: block;
   border-radius: 6px;
   padding:  12px 24px;
   font-size: var(--Fs__a);
   letter-spacing: var(--negativeLS);
-  margin: 2.5rem 0;
+  margin: 2.5rem auto;
 }
 
 .card__stars
@@ -198,7 +205,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px 5%;
+  padding: 5% 5dvw;
 }
 
 .advice h2, .advantages h2, .create h2, .about h2, .contact h2
@@ -217,7 +224,8 @@
 
 .advice__pp
 {
-  width: 30%;
+  width: 139px;
+  aspect-ratio: 1/1;
   border-radius: 50%;
 }
 
@@ -233,7 +241,6 @@
   text-align: start;
   line-height: 30px;
   font-size: var(--mobileFsLittleText);
-  margin-inline: 5%;
 }
 
 .advantages
@@ -242,8 +249,13 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 5%;
+  padding: 5% 5dvw;
   background-color: #F5F5F5;
+}
+
+.advantages__img
+{
+  width:clamp(327px,90vw,727px);
 }
 
 .advantages__list
@@ -268,22 +280,39 @@
 
 .create
 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 100%;
+  place-items: center;
   text-align: center;
-  padding: 5%;
+  padding: 5% 5dvw;
   background-color: var(--secondaryColor);
+}
+
+.create__img
+{
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
 .create__content
 {
-  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 8% 41% 54%;
+}
+
+.create__content h2
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .create__list
 {
   text-align: start;
+  margin-top: 2rem;
 }
 
 .create__list li
@@ -301,19 +330,23 @@
   width: fit-content;
 }
 
+.deleted__text
+{
+  display: none;
+}
+
 .about
 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 100%;
+  place-items: center;
   background-color: #F5F5F5;
-  padding-top: 5%;
 }
 
 .about h2
 {
-  width: 75%;
   text-align: center;
+  padding-top: 5%;
 }
 
 .about__content
@@ -342,7 +375,7 @@
 
 .about__logo
 {
-  width: clamp(214px, 50vw ,430px);
+  width: clamp(214px, 30vw ,430px);
   aspect-ratio: 2.78/1;
 }
 
@@ -366,6 +399,18 @@
   gap: 20px;
   width: 100%;
   padding: 20px 0;
+}
+
+.contact__nameANDmail
+{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact form input
+{
+  width: 100%;
 }
 
 .contact form input, .contact form textarea
@@ -395,14 +440,6 @@
   padding: 10px 0;
 }
 
-@media (min-width: 1250px)
-{
-  .formations__gallery
-  {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
 @media (min-width: 900px) {
   .formations__gallery
   {
@@ -425,5 +462,138 @@
   transform: translate(-50%, -50%);
   z-index: -1;
   object-fit:cover;
+  }
+
+   .create
+  {
+    text-align: initial;
+    justify-content: center; 
+  }
+
+  .create__content
+  {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5%;
+    width: 100%;
+  }
+
+  .create__img
+  {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    height: 100%; 
+  }
+
+  .create__img
+  {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .create__content h2
+  {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: block;
+    align-self: flex-start;
+  }
+
+  .create__list
+  {
+    grid-column: 2 / 3;
+    grid-row: 2 / 5;
+    margin-top: 0;
+  }
+
+  .deleted__text
+  {
+    display: flex;
+  }
+
+  .about
+  {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+  }
+
+  .about h2
+  {
+    text-align: start;
+    padding-left: 5%;
+  }
+
+  .about__logoContainer
+  {
+    height: 100%;
+  }
+
+  .contact hr
+  {
+    display: flex;
+    background: #44DD8A;
+    width: 30%;
+    height: 1px;
+    margin: 2rem 0;
+    border: none;
+  }
+  
+  .contact__nameANDmail
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact form input
+  {
+    width: 47.5%;
+  }
+
+  .contact form button{
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1250px)
+{
+  .formations__gallery
+  {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .formations h2
+  {
+    display: block;
+    text-align: start;
+    margin-left: 2%;
+  }
+
+  .adviceContainer
+  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+  }
+
+  .advice__profile
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .advantages__content
+  {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
   }
 }

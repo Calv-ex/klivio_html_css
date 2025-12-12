@@ -103,3 +103,79 @@
 {
   display: none;
 }
+
+@media (min-width : 900px)
+{
+  .footer__upper
+  {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 5%;
+    margin-top: 5%;
+    align-items: start;
+  }
+
+  .footer__logo
+  {
+    margin: 0;
+  }
+
+  .footer__upper__legal
+  {
+    margin: 0;
+    align-items: start;
+  }
+
+  .footer__upper__contact
+  {
+    margin: 0;
+    align-items: start;
+  }
+
+  .footer__upper__auth
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer .login__link
+  {
+    color: var(--primaryColor);
+  }
+
+  .footer__separator
+  {
+    display: flex;
+    width: 90%;
+    height: 1px;
+    border: none;
+    background-color: #44DD8A;
+    margin: 2% 0;
+  }
+
+  .footer__lower
+  {
+    margin-inline: 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__socials
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5%;
+    text-wrap: nowrap;
+    width: 30%;
+  }
+
+  .footer__lower img
+  {
+    width: fit-content;
+  }
+}
